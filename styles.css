@@ -1,0 +1,46 @@
+:root {
+    --black-text-color: rgb(42, 40, 40);
+}   
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(244, 244, 244);
+}
+.note {
+    box-shadow: 
+    8px 8px 16px #d6d6d6,
+    -8px -8px 16px #d8d8d8,
+    inset 2px 2px 4px rgba(124, 124, 124, 0.8),
+    inset -2px -2px 4px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 8px;
+    height: clamp(300px, 50vh, 450px);
+    min-height: 400px;
+    width: 90%;
+    margin: 0 auto !important;
+}
+.note[placeholder] {
+    text-align: center;
+    padding: 3px;
+}
+.note:focus {
+    outline: none !important; /* Kill the ugly blue outline */
+    box-shadow: 
+        8px 8px 16px #d6d6d6,
+        -8px -8px 16px #d8d8d8,
+        inset 2px 2px 4px rgba(124, 124, 124, 0.8),
+        inset -2px -2px 4px rgba(0,0,0,0.1) !important;
+
+}
+
+button.btn {
+    margin: 5px;
+    box-shadow: 7.5px 7.5px 7.5px #bec5cc,
+    -7.5px -7.5px 15px #95a3a5;
+}
+.deleteBtn {
+    color: white;
+    
+}
